@@ -491,7 +491,7 @@ mark {
 }
 
 .blockquote-footer::before {
-  content: "\2014\00A0"
+  content: "/2014/00A0"
 }
 
 .img-fluid {
@@ -11326,13 +11326,13 @@ a:focus {
   vertical-align: 0;
   border: 0;
   font-weight: 900;
-  content: '\f105';
+  content: '/f105';
   font-family: 'Font Awesome 5 Free'
 }
 
 .sidebar .nav-item.dropdown.show .dropdown-toggle::after,
 .topbar .nav-item.dropdown.show .dropdown-toggle::after {
-  content: '\f107'
+  content: '/f107'
 }
 
 .sidebar .nav-item .nav-link,
@@ -11611,7 +11611,7 @@ a:focus {
 
 .sidebar #sidebarToggle::after {
   font-weight: 900;
-  content: '\f104';
+  content: '/f104';
   font-family: 'Font Awesome 5 Free';
   margin-right: .1rem
 }
@@ -11630,7 +11630,7 @@ a:focus {
 }
 
 .sidebar.toggled #sidebarToggle::after {
-  content: '\f105';
+  content: '/f105';
   font-family: 'Font Awesome 5 Free';
   margin-left: .25rem
 }
@@ -11752,12 +11752,12 @@ a:focus {
     vertical-align: 0;
     border: 0;
     font-weight: 900;
-    content: '\f107';
+    content: '/f107';
     font-family: 'Font Awesome 5 Free'
   }
 
   .sidebar .nav-item .nav-link[data-toggle=collapse].collapsed::after {
-    content: '\f105'
+    content: '/f105'
   }
 
   .sidebar .sidebar-brand .sidebar-brand-icon i {
@@ -12041,7 +12041,7 @@ a:focus {
   padding-right: 1.725rem;
   line-height: 51px;
   font-weight: 900;
-  content: '\f107';
+  content: '/f107';
   font-family: 'Font Awesome 5 Free';
   color: #d1d3e2
 }
@@ -12051,7 +12051,7 @@ a:focus {
 }
 
 .card .card-header[data-toggle=collapse].collapsed::after {
-  content: '\f105'
+  content: '/f105'
 }
 
 .chart-area {
