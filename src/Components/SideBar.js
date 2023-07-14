@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 function SideBar() {
   return <>
    <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
@@ -17,9 +17,9 @@ function SideBar() {
 
 
 <li className="nav-item active">
-    <a className="nav-link" href="index.html">
+    <Link to='/dashboard'className="nav-link ">
         <i className="fas fa-fw fa-tachometer-alt"></i>
-        <span>Dashboard</span></a>
+        <span>Dashboard</span></Link>
 </li>
 
 
@@ -31,22 +31,13 @@ function SideBar() {
 
 
 <li className="nav-item">
-    <a className="nav-link collapsed" href="javascript(void)" data-toggle="collapse" data-target="#collapseTwo"
-        aria-expanded="true" aria-controls="collapseTwo">
+<Link to='/AddUser'className="nav-link ">
         <i className="fas fa-fw fa-cog"></i>
-        <span>Components</span>
-    </a>
-    
+        <span>create users</span></Link>
+  
 </li>
 
-<li className="nav-item">
-    <a className="nav-link collapsed" href="javascript(void)"  data-toggle="collapse" data-target="#collapseUtilities"
-        aria-expanded="true" aria-controls="collapseUtilities">
-        <i className="fas fa-fw fa-wrench"></i>
-        <span>Utilities</span>
-    </a>
-    
-</li>
+
 
 
 
