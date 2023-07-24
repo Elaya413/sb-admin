@@ -10,7 +10,7 @@ function AddUser({users,setUsers}) {
   let[address,setAddress]=useState("")
   let[mobile,setMobile]=useState("")
   let[batch,setBatch]=useState("")
-
+  let[teacher,setTeacher]=useState("")
   let navigate=useNavigate()
 
   let handleSave = ()=>{
@@ -20,6 +20,7 @@ newArray.push({
     email,
     address,
     mobile,
+    teacher,
     batch
   })
   setUsers(newArray)
@@ -50,6 +51,11 @@ newArray.push({
     <Form.Group className="mb-3">
       <Form.Label>mobile</Form.Label>
       <Form.Control type="text" placeholder="Enter mobile" onChange={(e)=>setMobile(e.target.value)}/>
+    </Form.Group>
+
+    <Form.Group className="mb-3">
+      <Form.Label>teacher</Form.Label>
+      <Form.Control type="text" placeholder="Enter teachername" onChange={(e)=>setTeacher(e.target.value)}/>
     </Form.Group>
 
     <Form.Group className="mb-3">

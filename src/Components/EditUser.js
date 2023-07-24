@@ -8,13 +8,14 @@ let[name,setName]=useState(users[params.id].name)
   let[email,setEmail]=useState(users[params.id].email)
   let[address,setAddress]=useState(users[params.id].address)
   let[mobile,setMobile]=useState(users[params.id].mobile)
+  let[teacher,setTeacher]=useState(users[params.id].teacher)
   let[batch,setBatch]=useState(users[params.id].batch)
 
   let navigate=useNavigate()
 
   let handleSave=()=>{
   let newArray=[...users]
-  newArray.splice(params.id,1,{ name,email,address, mobile, batch})
+  newArray.splice(params.id,1,{ name,email,address, mobile,teacher, batch})
 setUsers(newArray)
   navigate('/dashboard')
 }
@@ -42,6 +43,11 @@ setUsers(newArray)
     <Form.Group className="mb-3">
       <Form.Label>mobile</Form.Label>
       <Form.Control type="text" placeholder="Enter mobile" value={mobile} onChange={(e)=>setMobile(e.target.value)}/>
+    </Form.Group>
+
+    <Form.Group className="mb-3">
+      <Form.Label>teacher</Form.Label>
+      <Form.Control type="text" placeholder="Enter teachername" value={teacher} onChange={(e)=>setTeacher(e.target.value)}/>
     </Form.Group>
 
     <Form.Group className="mb-3">

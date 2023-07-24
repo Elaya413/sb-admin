@@ -12,13 +12,15 @@ function App() {
       email:"elaya@gmail.com",
       address:"155,nehru street,comibatore",
       mobile:"8765987328",
-      batch:"B46WET"
+      teacher:"bhuvana",
+      batch:"B45WET"
     },
     {
       name:"anbu",
       email:"anbu@gmail.com",
       address:"18,gandhi street,trichy",
       mobile:"9870634598",
+      teacher:"lokesh",
       batch:"B46WET"
     },
     {
@@ -26,7 +28,24 @@ function App() {
       email:"babu@gmail.com",
       address:"456,upparapatti,selam",
       mobile:"9870335578",
-      batch:"B46WET"
+      teacher:"arun",
+      batch:"B44WET"
+    },
+    {
+      name:"sandy",
+      email:"sandy@gmail.com",
+      address:"44,upparapatti,selam",
+      mobile:"9876335578",
+      teacher:"bhuvana",
+      batch:"B45WET"
+    },
+    {
+      name:"ramya",
+      email:"ramya@gmail.com",
+      address:"466,upparapatti,selam",
+      mobile:"9786335578",
+      teacher:"bhuvana",
+      batch:"B45WET"
     }
   ])
   return<>

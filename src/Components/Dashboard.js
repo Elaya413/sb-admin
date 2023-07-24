@@ -73,6 +73,7 @@ function Dashboard({users,setUsers}) {
           <th>email</th>
           <th>address</th>
           <th>mobile</th>
+          <th>teacher</th>
           <th>batch</th>
           <th>Actions</th>
         </tr>
@@ -86,6 +87,7 @@ function Dashboard({users,setUsers}) {
                     <td>{e.email}</td>
                     <td>{e.address}</td>
                     <td>{e.mobile}</td>
+                    <td>{e.teacher}</td>
                     <td>{e.batch}</td>
                     <td>
                         <Button variant="primary" onClick={()=>{navigate(`/EditUser/${i}`)}}>Edit</Button>
